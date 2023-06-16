@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane prefHeight="224.0" prefWidth="236.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="ConversorKmParaMilhasController">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+    <VBox spacing="10">
+        <Label style="-fx-font-size: 16pt; -fx-font-weight: bold;" text="Conversor de Km para Milhas" />
+        <Label text="Digite a distância em quilômetros:" />
+        <TextField fx:id="textFieldKm" />
+        <Button onAction="#converterKmParaMilhas" text="Converter" />
+        <Label text="Resultado em milhas:" />
+        <TextField fx:id="textFieldMilhas" editable="false" />
+    </VBox>
+</GridPane>

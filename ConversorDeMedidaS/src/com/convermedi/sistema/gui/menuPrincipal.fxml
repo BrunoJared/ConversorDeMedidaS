@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="MenuPrincipalController">
+    <MenuBar>
+        <Menu text="Conversores de Medidas">
+         <MenuItem mnemonicParsing="false" text="ConversorKmParaMilhas" />
+         <MenuItem mnemonicParsing="false" text="ConversorMetrosParaPes" />
+         <MenuItem mnemonicParsing="false" text="ConversorCentimetrosParaPolegadas" />
+         <MenuItem mnemonicParsing="false" text="ConversorCelsiusParaFahrenheit" />
+            <MenuItem onAction="#sair" text="Sair" />
+        </Menu>
+        <Menu text="Ferramentas">
+            <MenuItem onAction="#abrirConversorKmParaMilhas" text="Conversor de Km para Milhas" />
+            <MenuItem onAction="#abrirConversorMetrosParaPes" text="Conversor de Metros para Pés" />
+            <MenuItem onAction="#abrirConversorCentimetrosParaPolegadas" text="Conversor de Centímetros para Polegadas" />
+            <MenuItem onAction="#abrirConversorCelsiusParaFahrenheit" text="Conversor de Celsius para Fahrenheit" />
+        </Menu>
+    </MenuBar>
+</VBox>

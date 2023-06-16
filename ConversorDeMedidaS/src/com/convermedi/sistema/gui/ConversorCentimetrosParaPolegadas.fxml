@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="ConversorCentimetrosParaPolegadasController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+    <VBox spacing="10">
+        <Label text="Conversor de Centímetros para Polegadas" style="-fx-font-size: 16pt; -fx-font-weight: bold;" />
+        <Label text="Digite a medida em centímetros:" />
+        <TextField fx:id="textFieldCentimetros" />
+        <Button text="Converter" onAction="#converterCentimetrosParaPolegadas" />
+        <Label text="Resultado em polegadas:" />
+        <TextField fx:id="textFieldPolegadas" editable="false" />
+    </VBox>
+</GridPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml" fx:controller="ConversorMetrosParaPesController">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+    <VBox spacing="10">
+        <Label text="Conversor de Metros para Pés" style="-fx-font-size: 16pt; -fx-font-weight: bold;" />
+        <Label text="Digite a distância em metros:" />
+        <TextField fx:id="textFieldMetros" />
+        <Button text="Converter" onAction="#converterMetrosParaPes" />
+        <Label text="Resultado em pés:" />
+        <TextField fx:id="textFieldPes" editable="false" />
+    </VBox>
+</GridPane>
